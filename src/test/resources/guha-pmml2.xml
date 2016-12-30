@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen SCHSchema="http://easyminer.eu/schemas/GUHARestr0_1.sch"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pmml="http://www.dmg.org/PMML-4_0" version="4.0"
+    xsi:schemaLocation="http://www.dmg.org/PMML-4_0 http://easyminer.eu/schemas/PMML4.0+GUHA0.1.xsd">
+    <Header copyright="Copyright (c) KIZI UEP, 2016">
+        <Extension name="author" value="Stanislav Vojíř"/>
+        <Extension name="subsystem" value="cloud"/>
+        <Extension name="module" value="cloud"/>
+        <Extension name="format" value="4ftMiner.Task"/>
+        <Extension name="dataset" value=""/>
+        <Application name="EasyMiner" version="2.3b"/>
+        <Timestamp>2016-10-04 16:43:53 GMT + 02:00</Timestamp>
+    </Header>
+    <DataDictionary numberOfFields="15">
+        <DataField name="X13" dataType="string" optype="continuous"/>
+        <DataField name="X14" dataType="string" optype="continuous"/>
+        <DataField name="X10" dataType="string" optype="continuous"/>
+        <DataField name="X8" dataType="string" optype="continuous"/>
+        <DataField name="X9" dataType="string" optype="continuous"/>
+        <DataField name="X11" dataType="string" optype="continuous"/>
+        <DataField name="X2" dataType="string" optype="continuous"/>
+        <DataField name="X3" dataType="string" optype="continuous"/>
+        <DataField name="X12" dataType="string" optype="continuous"/>
+        <DataField name="X1" dataType="string" optype="continuous"/>
+        <DataField name="X6" dataType="string" optype="continuous"/>
+        <DataField name="X7" dataType="string" optype="continuous"/>
+        <DataField name="X4" dataType="string" optype="continuous"/>
+        <DataField name="X5" dataType="string" optype="continuous"/>
+        <DataField name="Y" dataType="float" optype="continuous"/>
+    </DataDictionary>
+    <TransformationDictionary>
+        <DerivedField name="x13" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X13"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="401" extender="-0.895_to_inf"/>
+                    <Extension name="Frequency" value="221" extender="-inf_to_-0.895"/>
+                    <row>
+                        <column>-0.895_to_inf</column>
+                        <field>-0.895_to_inf</field>
+                    </row>
+                    <row>
+                        <column>-inf_to_-0.895</column>
+                        <field>-inf_to_-0.895</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x14" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X14"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="146" extender="-0.99016_to_inf"/>
+                    <Extension name="Frequency" value="476" extender="-inf_to_-0.99016"/>
+                    <row>
+                        <column>-0.99016_to_inf</column>
+                        <field>-0.99016_to_inf</field>
+                    </row>
+                    <row>
+                        <column>-inf_to_-0.99016</column>
+                        <field>-inf_to_-0.99016</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x10" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X10"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="163" extender="-0.9253735_to_inf"/>
+                    <Extension name="Frequency" value="459" extender="-inf_to_-0.9253735"/>
+                    <row>
+                        <column>-0.9253735_to_inf</column>
+                        <field>-0.9253735_to_inf</field>
+                    </row>
+                    <row>
+                        <column>-inf_to_-0.9253735</column>
+                        <field>-inf_to_-0.9253735</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x8" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X8"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="295" extender="-inf_to_0.0"/>
+                    <Extension name="Frequency" value="327" extender="0.0_to_inf"/>
+                    <row>
+                        <column>-inf_to_0.0</column>
+                        <field>-inf_to_0.0</field>
+                    </row>
+                    <row>
+                        <column>0.0_to_inf</column>
+                        <field>0.0_to_inf</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x9" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X9"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="357" extender="-inf_to_0.0"/>
+                    <Extension name="Frequency" value="265" extender="0.0_to_inf"/>
+                    <row>
+                        <column>-inf_to_0.0</column>
+                        <field>-inf_to_0.0</field>
+                    </row>
+                    <row>
+                        <column>0.0_to_inf</column>
+                        <field>0.0_to_inf</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x11" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X11"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="622" extender="All"/>
+                    <row>
+                        <column>All</column>
+                        <field>All</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x2" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X2"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="622" extender="All"/>
+                    <row>
+                        <column>All</column>
+                        <field>All</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x3" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X3"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="246" extender="-0.6994645_to_inf"/>
+                    <Extension name="Frequency" value="376" extender="-inf_to_-0.6994645"/>
+                    <row>
+                        <column>-0.6994645_to_inf</column>
+                        <field>-0.6994645_to_inf</field>
+                    </row>
+                    <row>
+                        <column>-inf_to_-0.6994645</column>
+                        <field>-inf_to_-0.6994645</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x12" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X12"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="622" extender="All"/>
+                    <row>
+                        <column>All</column>
+                        <field>All</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x1" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X1"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="622" extender="All"/>
+                    <row>
+                        <column>All</column>
+                        <field>All</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x6" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X6"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="432" extender="-0.875_to_0.625"/>
+                    <Extension name="Frequency" value="55" extender="-inf_to_-0.875"/>
+                    <Extension name="Frequency" value="135" extender="0.625_to_inf"/>
+                    <row>
+                        <column>-0.875_to_0.625</column>
+                        <field>-0.875_to_0.625</field>
+                    </row>
+                    <row>
+                        <column>-inf_to_-0.875</column>
+                        <field>-inf_to_-0.875</field>
+                    </row>
+                    <row>
+                        <column>0.625_to_inf</column>
+                        <field>0.625_to_inf</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x7" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X7"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="276" extender="-0.9108775_to_inf"/>
+                    <Extension name="Frequency" value="346" extender="-inf_to_-0.9108775"/>
+                    <row>
+                        <column>-0.9108775_to_inf</column>
+                        <field>-0.9108775_to_inf</field>
+                    </row>
+                    <row>
+                        <column>-inf_to_-0.9108775</column>
+                        <field>-inf_to_-0.9108775</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x4" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X4"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="622" extender="All"/>
+                    <row>
+                        <column>All</column>
+                        <field>All</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="x5" dataType="string" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="X5"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="265" extender="-inf_to_0.0"/>
+                    <Extension name="Frequency" value="213" extender="0.0_to_0.4615385"/>
+                    <Extension name="Frequency" value="144" extender="0.4615385_to_inf"/>
+                    <row>
+                        <column>-inf_to_0.0</column>
+                        <field>-inf_to_0.0</field>
+                    </row>
+                    <row>
+                        <column>0.0_to_0.4615385</column>
+                        <field>0.0_to_0.4615385</field>
+                    </row>
+                    <row>
+                        <column>0.4615385_to_inf</column>
+                        <field>0.4615385_to_inf</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+        <DerivedField name="y" dataType="float" optype="continuous">
+            <MapValues outputColumn="field">
+                <FieldColumnPair column="column" field="Y"/>
+                <InlineTable>
+                    <Extension name="Frequency" value="345" extender="-1"/>
+                    <Extension name="Frequency" value="277" extender="1"/>
+                    <row>
+                        <column>-1</column>
+                        <field>-1</field>
+                    </row>
+                    <row>
+                        <column>1</column>
+                        <field>1</field>
+                    </row>
+                </InlineTable>
+            </MapValues>
+        </DerivedField>
+    </TransformationDictionary>
+    <guha:AssociationModel xmlns:guha="http://keg.vse.cz/ns/GUHA0.1rev1" xmlns=""
+        modelName="57f3be92a18e8" functionName="associationRules" algorithmName="4ft">
+        <TaskSetting xmlns="">
+            <Extension xmlns="" name="LISp-Miner">
+                <HypothesesCountMax xmlns="">5000</HypothesesCountMax>
+            </Extension>
+            <BBASettings xmlns="">
+                <BBASetting id="4">
+                    <Text>x13</Text>
+                    <Name>x13</Name>
+                    <FieldRef>x13</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="7">
+                    <Text>x14</Text>
+                    <Name>x14</Name>
+                    <FieldRef>x14</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="10">
+                    <Text>x10</Text>
+                    <Name>x10</Name>
+                    <FieldRef>x10</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="13">
+                    <Text>x8</Text>
+                    <Name>x8</Name>
+                    <FieldRef>x8</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="16">
+                    <Text>x9</Text>
+                    <Name>x9</Name>
+                    <FieldRef>x9</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="19">
+                    <Text>x11</Text>
+                    <Name>x11</Name>
+                    <FieldRef>x11</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="22">
+                    <Text>x2</Text>
+                    <Name>x2</Name>
+                    <FieldRef>x2</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="25">
+                    <Text>x3</Text>
+                    <Name>x3</Name>
+                    <FieldRef>x3</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="28">
+                    <Text>x12</Text>
+                    <Name>x12</Name>
+                    <FieldRef>x12</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="31">
+                    <Text>x1</Text>
+                    <Name>x1</Name>
+                    <FieldRef>x1</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="34">
+                    <Text>x6</Text>
+                    <Name>x6</Name>
+                    <FieldRef>x6</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="37">
+                    <Text>x7</Text>
+                    <Name>x7</Name>
+                    <FieldRef>x7</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="40">
+                    <Text>x4</Text>
+                    <Name>x4</Name>
+                    <FieldRef>x4</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="43">
+                    <Text>x5</Text>
+                    <Name>x5</Name>
+                    <FieldRef>x5</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="46">
+                    <Text>y</Text>
+                    <Name>y</Name>
+                    <FieldRef>y</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+                <BBASetting id="53">
+                    <Text>y</Text>
+                    <Name>y</Name>
+                    <FieldRef>y</FieldRef>
+                    <Coefficient>
+                        <Type>Subset</Type>
+                        <MinimalLength>1</MinimalLength>
+                        <MaximalLength>1</MaximalLength>
+                    </Coefficient>
+                </BBASetting>
+            </BBASettings>
+            <DBASettings xmlns="">
+                <DBASetting id="1" type="Conjunction">
+                    <BASettingRef>2</BASettingRef>
+                    <BASettingRef>5</BASettingRef>
+                    <BASettingRef>8</BASettingRef>
+                    <BASettingRef>11</BASettingRef>
+                    <BASettingRef>14</BASettingRef>
+                    <BASettingRef>17</BASettingRef>
+                    <BASettingRef>20</BASettingRef>
+                    <BASettingRef>23</BASettingRef>
+                    <BASettingRef>26</BASettingRef>
+                    <BASettingRef>29</BASettingRef>
+                    <BASettingRef>32</BASettingRef>
+                    <BASettingRef>35</BASettingRef>
+                    <BASettingRef>38</BASettingRef>
+                    <BASettingRef>41</BASettingRef>
+                    <BASettingRef>44</BASettingRef>
+                    <MinimalLength>1</MinimalLength>
+                </DBASetting>
+                <DBASetting id="2" type="Conjunction">
+                    <BASettingRef>3</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="3" type="Literal">
+                    <BASettingRef>4</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="5" type="Conjunction">
+                    <BASettingRef>6</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="6" type="Literal">
+                    <BASettingRef>7</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="8" type="Conjunction">
+                    <BASettingRef>9</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="9" type="Literal">
+                    <BASettingRef>10</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="11" type="Conjunction">
+                    <BASettingRef>12</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="12" type="Literal">
+                    <BASettingRef>13</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="14" type="Conjunction">
+                    <BASettingRef>15</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="15" type="Literal">
+                    <BASettingRef>16</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="17" type="Conjunction">
+                    <BASettingRef>18</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="18" type="Literal">
+                    <BASettingRef>19</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="20" type="Conjunction">
+                    <BASettingRef>21</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="21" type="Literal">
+                    <BASettingRef>22</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="23" type="Conjunction">
+                    <BASettingRef>24</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="24" type="Literal">
+                    <BASettingRef>25</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="26" type="Conjunction">
+                    <BASettingRef>27</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="27" type="Literal">
+                    <BASettingRef>28</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="29" type="Conjunction">
+                    <BASettingRef>30</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="30" type="Literal">
+                    <BASettingRef>31</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="32" type="Conjunction">
+                    <BASettingRef>33</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="33" type="Literal">
+                    <BASettingRef>34</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="35" type="Conjunction">
+                    <BASettingRef>36</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="36" type="Literal">
+                    <BASettingRef>37</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="38" type="Conjunction">
+                    <BASettingRef>39</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="39" type="Literal">
+                    <BASettingRef>40</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="41" type="Conjunction">
+                    <BASettingRef>42</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="42" type="Literal">
+                    <BASettingRef>43</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="44" type="Conjunction">
+                    <BASettingRef>45</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="45" type="Literal">
+                    <BASettingRef>46</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+                <DBASetting id="50" type="Conjunction">
+                    <BASettingRef>51</BASettingRef>
+                    <MinimalLength>1</MinimalLength>
+                </DBASetting>
+                <DBASetting id="51" type="Conjunction">
+                    <BASettingRef>52</BASettingRef>
+                    <MinimalLength>0</MinimalLength>
+                </DBASetting>
+                <DBASetting id="52" type="Literal">
+                    <BASettingRef>53</BASettingRef>
+                    <LiteralSign>Positive</LiteralSign>
+                </DBASetting>
+            </DBASettings>
+            <AntecedentSetting xmlns="">1</AntecedentSetting>
+            <ConsequentSetting xmlns="">50</ConsequentSetting>
+            <InterestMeasureSetting xmlns="">
+                <InterestMeasureThreshold id="47">
+                    <InterestMeasure>CONF</InterestMeasure>
+                    <Threshold>0.5</Threshold>
+                    <ThresholdType>% of all</ThresholdType>
+                    <CompareType>Greater than or equal</CompareType>
+                </InterestMeasureThreshold>
+                <InterestMeasureThreshold id="48">
+                    <InterestMeasure>SUPP</InterestMeasure>
+                    <Threshold>0.01</Threshold>
+                    <ThresholdType>% of all</ThresholdType>
+                    <CompareType>Greater than or equal</CompareType>
+                </InterestMeasureThreshold>
+                <InterestMeasureThreshold id="49">
+                    <InterestMeasure>CBA</InterestMeasure>
+                    <Threshold/>
+                    <ThresholdType>% of all</ThresholdType>
+                    <CompareType>Greater than or equal</CompareType>
+                </InterestMeasureThreshold>
+            </InterestMeasureSetting>
+        </TaskSetting>
+        <AssociationRules xmlns="">
+            <BBA id="bba_158144" literal="false">
+                <FieldRef>x13</FieldRef>
+                <CatRef>-inf_to_-0.895</CatRef>
+            </BBA>
+            <BBA id="bba_158147" literal="false">
+                <FieldRef>x8</FieldRef>
+                <CatRef>-inf_to_0.0</CatRef>
+            </BBA>
+            <BBA id="bba_158143" literal="false">
+                <FieldRef>x5</FieldRef>
+                <CatRef>-inf_to_0.0</CatRef>
+            </BBA>
+            <BBA id="bba_158140" literal="false">
+                <FieldRef>y</FieldRef>
+                <CatRef>-1.0</CatRef>
+            </BBA>
+            <BBA id="bba_158129" literal="false">
+                <FieldRef>x6</FieldRef>
+                <CatRef>-inf_to_-0.875</CatRef>
+            </BBA>
+            <BBA id="bba_158142" literal="false">
+                <FieldRef>x14</FieldRef>
+                <CatRef>-inf_to_-0.99016</CatRef>
+            </BBA>
+            <BBA id="bba_158127" literal="false">
+                <FieldRef>x3</FieldRef>
+                <CatRef>-0.6994645_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158130" literal="false">
+                <FieldRef>x14</FieldRef>
+                <CatRef>-0.99016_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158134" literal="false">
+                <FieldRef>x8</FieldRef>
+                <CatRef>0.0_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158135" literal="false">
+                <FieldRef>x5</FieldRef>
+                <CatRef>0.0_to_0.4615385</CatRef>
+            </BBA>
+            <BBA id="bba_158136" literal="false">
+                <FieldRef>y</FieldRef>
+                <CatRef>1.0</CatRef>
+            </BBA>
+            <BBA id="bba_158139" literal="false">
+                <FieldRef>x7</FieldRef>
+                <CatRef>-0.9108775_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158128" literal="false">
+                <FieldRef>x13</FieldRef>
+                <CatRef>-0.895_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158145" literal="false">
+                <FieldRef>x9</FieldRef>
+                <CatRef>0.0_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158131" literal="false">
+                <FieldRef>x6</FieldRef>
+                <CatRef>0.625_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158146" literal="false">
+                <FieldRef>x10</FieldRef>
+                <CatRef>-0.9253735_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158137" literal="false">
+                <FieldRef>x3</FieldRef>
+                <CatRef>-inf_to_-0.6994645</CatRef>
+            </BBA>
+            <BBA id="bba_158133" literal="false">
+                <FieldRef>x5</FieldRef>
+                <CatRef>0.4615385_to_inf</CatRef>
+            </BBA>
+            <BBA id="bba_158141" literal="false">
+                <FieldRef>x7</FieldRef>
+                <CatRef>-inf_to_-0.9108775</CatRef>
+            </BBA>
+            <BBA id="bba_158138" literal="false">
+                <FieldRef>x10</FieldRef>
+                <CatRef>-inf_to_-0.9253735</CatRef>
+            </BBA>
+            <BBA id="bba_158148" literal="false">
+                <FieldRef>x9</FieldRef>
+                <CatRef>-inf_to_0.0</CatRef>
+            </BBA>
+            <BBA id="bba_158132" literal="false">
+                <FieldRef>x6</FieldRef>
+                <CatRef>-0.875_to_0.625</CatRef>
+            </BBA>
+            <DBA id="cdnt_959581" connective="Conjunction">
+                <BARef>cdnt_959550</BARef>
+                <BARef>cdnt_959581_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959550" connective="Conjunction">
+                <BARef>cdnt_959550_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959550_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="dba_158144" connective="Conjunction" literal="true">
+                <BARef>bba_158144</BARef>
+            </DBA>
+            <DBA id="dba_158147" connective="Conjunction" literal="true">
+                <BARef>bba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959581_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="dba_158143" connective="Conjunction" literal="true">
+                <BARef>bba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959682" connective="Conjunction">
+                <BARef>cdnt_959682_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959682_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158140</BARef>
+            </DBA>
+            <DBA id="dba_158140" connective="Conjunction" literal="true">
+                <BARef>bba_158140</BARef>
+            </DBA>
+            <DBA id="cdnt_959620" connective="Conjunction">
+                <BARef>cdnt_959549</BARef>
+                <BARef>cdnt_959620_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959549" connective="Conjunction">
+                <BARef>cdnt_959549_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959549_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158129</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="dba_158129" connective="Conjunction" literal="true">
+                <BARef>bba_158129</BARef>
+            </DBA>
+            <DBA id="cdnt_959620_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959675" connective="Conjunction">
+                <BARef>cdnt_959662</BARef>
+                <BARef>cdnt_959675_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959662" connective="Conjunction">
+                <BARef>cdnt_959598</BARef>
+                <BARef>cdnt_959662_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959598" connective="Conjunction">
+                <BARef>cdnt_959598_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959598_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158142</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="dba_158142" connective="Conjunction" literal="true">
+                <BARef>bba_158142</BARef>
+            </DBA>
+            <DBA id="cdnt_959662_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="dba_158127" connective="Conjunction" literal="true">
+                <BARef>bba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959675_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959621" connective="Conjunction">
+                <BARef>cdnt_959587</BARef>
+                <BARef>cdnt_959621_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959587" connective="Conjunction">
+                <BARef>cdnt_959587_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959587_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="dba_158130" connective="Conjunction" literal="true">
+                <BARef>bba_158130</BARef>
+            </DBA>
+            <DBA id="dba_158134" connective="Conjunction" literal="true">
+                <BARef>bba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959621_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="dba_158135" connective="Conjunction" literal="true">
+                <BARef>bba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959683" connective="Conjunction">
+                <BARef>cdnt_959683_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959683_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158136</BARef>
+            </DBA>
+            <DBA id="dba_158136" connective="Conjunction" literal="true">
+                <BARef>bba_158136</BARef>
+            </DBA>
+            <DBA id="cdnt_959672" connective="Conjunction">
+                <BARef>cdnt_959604</BARef>
+                <BARef>cdnt_959672_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959604" connective="Conjunction">
+                <BARef>cdnt_959573</BARef>
+                <BARef>cdnt_959604_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959573" connective="Conjunction">
+                <BARef>cdnt_959573_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959573_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+                <BARef>dba_158139</BARef>
+            </DBA>
+            <DBA id="dba_158139" connective="Conjunction" literal="true">
+                <BARef>bba_158139</BARef>
+            </DBA>
+            <DBA id="cdnt_959604_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959672_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="dba_158128" connective="Conjunction" literal="true">
+                <BARef>bba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959571" connective="Conjunction">
+                <BARef>cdnt_959559</BARef>
+                <BARef>cdnt_959571_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959559" connective="Conjunction">
+                <BARef>cdnt_959547</BARef>
+                <BARef>cdnt_959559_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959547" connective="Conjunction">
+                <BARef>cdnt_959547_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959547_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="dba_158145" connective="Conjunction" literal="true">
+                <BARef>bba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959559_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959571_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959652" connective="Conjunction">
+                <BARef>cdnt_959588</BARef>
+                <BARef>cdnt_959652_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959588" connective="Conjunction">
+                <BARef>cdnt_959588_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959588_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158131</BARef>
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="dba_158131" connective="Conjunction" literal="true">
+                <BARef>bba_158131</BARef>
+            </DBA>
+            <DBA id="cdnt_959652_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959673" connective="Conjunction">
+                <BARef>cdnt_959631</BARef>
+                <BARef>cdnt_959673_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959631" connective="Conjunction">
+                <BARef>cdnt_959557</BARef>
+                <BARef>cdnt_959631_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959557" connective="Conjunction">
+                <BARef>cdnt_959557_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959557_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+                <BARef>dba_158146</BARef>
+            </DBA>
+            <DBA id="dba_158146" connective="Conjunction" literal="true">
+                <BARef>bba_158146</BARef>
+            </DBA>
+            <DBA id="cdnt_959631_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959673_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959551" connective="Conjunction">
+                <BARef>cdnt_959543</BARef>
+                <BARef>cdnt_959551_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959543" connective="Conjunction">
+                <BARef>cdnt_959543_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959543_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959551_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959674" connective="Conjunction">
+                <BARef>cdnt_959631</BARef>
+                <BARef>cdnt_959674_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959674_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="dba_158137" connective="Conjunction" literal="true">
+                <BARef>bba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959582" connective="Conjunction">
+                <BARef>cdnt_959570</BARef>
+                <BARef>cdnt_959582_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959570" connective="Conjunction">
+                <BARef>cdnt_959570_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959570_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158145</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959582_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959634" connective="Conjunction">
+                <BARef>cdnt_959567</BARef>
+                <BARef>cdnt_959634_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959567" connective="Conjunction">
+                <BARef>cdnt_959542</BARef>
+                <BARef>cdnt_959567_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959542" connective="Conjunction">
+                <BARef>cdnt_959542_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959542_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158139</BARef>
+                <BARef>dba_158146</BARef>
+            </DBA>
+            <DBA id="cdnt_959567_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959634_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959555" connective="Conjunction">
+                <BARef>cdnt_959552</BARef>
+                <BARef>cdnt_959555_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959552" connective="Conjunction">
+                <BARef>cdnt_959552_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959552_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158131</BARef>
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959555_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="dba_158133" connective="Conjunction" literal="true">
+                <BARef>bba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959606" connective="Conjunction">
+                <BARef>cdnt_959599</BARef>
+                <BARef>cdnt_959606_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959599" connective="Conjunction">
+                <BARef>cdnt_959547</BARef>
+                <BARef>cdnt_959599_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959599_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959606_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959595" connective="Conjunction">
+                <BARef>cdnt_959558</BARef>
+                <BARef>cdnt_959595_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959558" connective="Conjunction">
+                <BARef>cdnt_959558_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959558_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158131</BARef>
+                <BARef>dba_158141</BARef>
+            </DBA>
+            <DBA id="dba_158141" connective="Conjunction" literal="true">
+                <BARef>bba_158141</BARef>
+            </DBA>
+            <DBA id="cdnt_959595_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959663" connective="Conjunction">
+                <BARef>cdnt_959611</BARef>
+                <BARef>cdnt_959663_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959611" connective="Conjunction">
+                <BARef>cdnt_959541</BARef>
+                <BARef>cdnt_959611_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959541" connective="Conjunction">
+                <BARef>cdnt_959541_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959541_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158138</BARef>
+                <BARef>dba_158139</BARef>
+            </DBA>
+            <DBA id="dba_158138" connective="Conjunction" literal="true">
+                <BARef>bba_158138</BARef>
+            </DBA>
+            <DBA id="cdnt_959611_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959663_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959651" connective="Conjunction">
+                <BARef>cdnt_959589</BARef>
+                <BARef>cdnt_959651_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959589" connective="Conjunction">
+                <BARef>cdnt_959557</BARef>
+                <BARef>cdnt_959589_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959589_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959651_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959678" connective="Conjunction">
+                <BARef>cdnt_959658</BARef>
+                <BARef>cdnt_959678_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959658" connective="Conjunction">
+                <BARef>cdnt_959593</BARef>
+                <BARef>cdnt_959658_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959593" connective="Conjunction">
+                <BARef>cdnt_959593_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959593_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158129</BARef>
+                <BARef>dba_158148</BARef>
+            </DBA>
+            <DBA id="dba_158148" connective="Conjunction" literal="true">
+                <BARef>bba_158148</BARef>
+            </DBA>
+            <DBA id="cdnt_959658_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959678_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959627" connective="Conjunction">
+                <BARef>cdnt_959572</BARef>
+                <BARef>cdnt_959627_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959572" connective="Conjunction">
+                <BARef>cdnt_959565</BARef>
+                <BARef>cdnt_959572_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959565" connective="Conjunction">
+                <BARef>cdnt_959565_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959565_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158132</BARef>
+                <BARef>dba_158146</BARef>
+            </DBA>
+            <DBA id="dba_158132" connective="Conjunction" literal="true">
+                <BARef>bba_158132</BARef>
+            </DBA>
+            <DBA id="cdnt_959572_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959627_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959602" connective="Conjunction">
+                <BARef>cdnt_959570</BARef>
+                <BARef>cdnt_959602_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959602_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959647" connective="Conjunction">
+                <BARef>cdnt_959577</BARef>
+                <BARef>cdnt_959647_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959577" connective="Conjunction">
+                <BARef>cdnt_959577_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959577_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158139</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959647_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959655" connective="Conjunction">
+                <BARef>cdnt_959601</BARef>
+                <BARef>cdnt_959655_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959601" connective="Conjunction">
+                <BARef>cdnt_959548</BARef>
+                <BARef>cdnt_959601_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959548" connective="Conjunction">
+                <BARef>cdnt_959548_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959548_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158141</BARef>
+                <BARef>dba_158146</BARef>
+            </DBA>
+            <DBA id="cdnt_959601_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959655_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959556" connective="Conjunction">
+                <BARef>cdnt_959544</BARef>
+                <BARef>cdnt_959556_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959544" connective="Conjunction">
+                <BARef>cdnt_959544_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959544_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158131</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959556_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959626" connective="Conjunction">
+                <BARef>cdnt_959605</BARef>
+                <BARef>cdnt_959626_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959605" connective="Conjunction">
+                <BARef>cdnt_959545</BARef>
+                <BARef>cdnt_959605_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959545" connective="Conjunction">
+                <BARef>cdnt_959545_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959545_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+                <BARef>dba_158138</BARef>
+            </DBA>
+            <DBA id="cdnt_959605_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959626_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959633" connective="Conjunction">
+                <BARef>cdnt_959570</BARef>
+                <BARef>cdnt_959633_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959633_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959642" connective="Conjunction">
+                <BARef>cdnt_959577</BARef>
+                <BARef>cdnt_959642_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959642_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959660" connective="Conjunction">
+                <BARef>cdnt_959628</BARef>
+                <BARef>cdnt_959660_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959628" connective="Conjunction">
+                <BARef>cdnt_959588</BARef>
+                <BARef>cdnt_959628_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959628_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959660_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959667" connective="Conjunction">
+                <BARef>cdnt_959607</BARef>
+                <BARef>cdnt_959667_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959607" connective="Conjunction">
+                <BARef>cdnt_959545</BARef>
+                <BARef>cdnt_959607_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959607_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959667_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959636" connective="Conjunction">
+                <BARef>cdnt_959558</BARef>
+                <BARef>cdnt_959636_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959636_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959679" connective="Conjunction">
+                <BARef>cdnt_959645</BARef>
+                <BARef>cdnt_959679_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959645" connective="Conjunction">
+                <BARef>cdnt_959591</BARef>
+                <BARef>cdnt_959645_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959591" connective="Conjunction">
+                <BARef>cdnt_959591_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959591_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158142</BARef>
+                <BARef>dba_158146</BARef>
+            </DBA>
+            <DBA id="cdnt_959645_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959679_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959668" connective="Conjunction">
+                <BARef>cdnt_959630</BARef>
+                <BARef>cdnt_959668_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959630" connective="Conjunction">
+                <BARef>cdnt_959592</BARef>
+                <BARef>cdnt_959630_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959592" connective="Conjunction">
+                <BARef>cdnt_959592_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959592_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158147</BARef>
+                <BARef>dba_158148</BARef>
+            </DBA>
+            <DBA id="cdnt_959630_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959668_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959650" connective="Conjunction">
+                <BARef>cdnt_959629</BARef>
+                <BARef>cdnt_959650_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959629" connective="Conjunction">
+                <BARef>cdnt_959577</BARef>
+                <BARef>cdnt_959629_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959629_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959650_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959560" connective="Conjunction">
+                <BARef>cdnt_959560_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959560_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158146</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959639" connective="Conjunction">
+                <BARef>cdnt_959569</BARef>
+                <BARef>cdnt_959639_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959569" connective="Conjunction">
+                <BARef>cdnt_959539</BARef>
+                <BARef>cdnt_959569_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959539" connective="Conjunction">
+                <BARef>cdnt_959539_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959539_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959569_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959639_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959648" connective="Conjunction">
+                <BARef>cdnt_959632</BARef>
+                <BARef>cdnt_959648_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959632" connective="Conjunction">
+                <BARef>cdnt_959588</BARef>
+                <BARef>cdnt_959632_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959632_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158148</BARef>
+            </DBA>
+            <DBA id="cdnt_959648_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959676" connective="Conjunction">
+                <BARef>cdnt_959622</BARef>
+                <BARef>cdnt_959676_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959622" connective="Conjunction">
+                <BARef>cdnt_959553</BARef>
+                <BARef>cdnt_959622_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959553" connective="Conjunction">
+                <BARef>cdnt_959553_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959553_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+                <BARef>dba_158148</BARef>
+            </DBA>
+            <DBA id="cdnt_959622_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+            </DBA>
+            <DBA id="cdnt_959676_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959623" connective="Conjunction">
+                <BARef>cdnt_959609</BARef>
+                <BARef>cdnt_959623_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959609" connective="Conjunction">
+                <BARef>cdnt_959563</BARef>
+                <BARef>cdnt_959609_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959563" connective="Conjunction">
+                <BARef>cdnt_959563_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959563_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+                <BARef>dba_158141</BARef>
+            </DBA>
+            <DBA id="cdnt_959609_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158148</BARef>
+            </DBA>
+            <DBA id="cdnt_959623_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959574" connective="Conjunction">
+                <BARef>cdnt_959546</BARef>
+                <BARef>cdnt_959574_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959546" connective="Conjunction">
+                <BARef>cdnt_959542</BARef>
+                <BARef>cdnt_959546_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959546_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959574_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959646" connective="Conjunction">
+                <BARef>cdnt_959597</BARef>
+                <BARef>cdnt_959646_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959597" connective="Conjunction">
+                <BARef>cdnt_959597_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959597_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158130</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959646_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959664" connective="Conjunction">
+                <BARef>cdnt_959612</BARef>
+                <BARef>cdnt_959664_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959612" connective="Conjunction">
+                <BARef>cdnt_959579</BARef>
+                <BARef>cdnt_959612_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959579" connective="Conjunction">
+                <BARef>cdnt_959579_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959579_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158129</BARef>
+                <BARef>dba_158138</BARef>
+            </DBA>
+            <DBA id="cdnt_959612_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959664_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959649" connective="Conjunction">
+                <BARef>cdnt_959641</BARef>
+                <BARef>cdnt_959649_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959641" connective="Conjunction">
+                <BARef>cdnt_959564</BARef>
+                <BARef>cdnt_959641_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959564" connective="Conjunction">
+                <BARef>cdnt_959564_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959564_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158141</BARef>
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <DBA id="cdnt_959641_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158142</BARef>
+            </DBA>
+            <DBA id="cdnt_959649_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959584" connective="Conjunction">
+                <BARef>cdnt_959564</BARef>
+                <BARef>cdnt_959584_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959584_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959614" connective="Conjunction">
+                <BARef>cdnt_959570</BARef>
+                <BARef>cdnt_959614_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959614_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158142</BARef>
+            </DBA>
+            <DBA id="cdnt_959635" connective="Conjunction">
+                <BARef>cdnt_959616</BARef>
+                <BARef>cdnt_959635_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959616" connective="Conjunction">
+                <BARef>cdnt_959565</BARef>
+                <BARef>cdnt_959616_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959616_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959635_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959677" connective="Conjunction">
+                <BARef>cdnt_959641</BARef>
+                <BARef>cdnt_959677_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959677_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959624" connective="Conjunction">
+                <BARef>cdnt_959599</BARef>
+                <BARef>cdnt_959624_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959624_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959643" connective="Conjunction">
+                <BARef>cdnt_959598</BARef>
+                <BARef>cdnt_959643_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959643_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959568" connective="Conjunction">
+                <BARef>cdnt_959557</BARef>
+                <BARef>cdnt_959568_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959568_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959638" connective="Conjunction">
+                <BARef>cdnt_959578</BARef>
+                <BARef>cdnt_959638_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959578" connective="Conjunction">
+                <BARef>cdnt_959578_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959578_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158129</BARef>
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959638_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959665" connective="Conjunction">
+                <BARef>cdnt_959593</BARef>
+                <BARef>cdnt_959665_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959665_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959671" connective="Conjunction">
+                <BARef>cdnt_959616</BARef>
+                <BARef>cdnt_959671_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959671_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959619" connective="Conjunction">
+                <BARef>cdnt_959583</BARef>
+                <BARef>cdnt_959619_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959583" connective="Conjunction">
+                <BARef>cdnt_959557</BARef>
+                <BARef>cdnt_959583_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959583_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959619_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959637" connective="Conjunction">
+                <BARef>cdnt_959576</BARef>
+                <BARef>cdnt_959637_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959576" connective="Conjunction">
+                <BARef>cdnt_959554</BARef>
+                <BARef>cdnt_959576_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959554" connective="Conjunction">
+                <BARef>cdnt_959554_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959554_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158132</BARef>
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959576_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959637_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959661" connective="Conjunction">
+                <BARef>cdnt_959586</BARef>
+                <BARef>cdnt_959661_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959586" connective="Conjunction">
+                <BARef>cdnt_959542</BARef>
+                <BARef>cdnt_959586_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959586_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158132</BARef>
+            </DBA>
+            <DBA id="cdnt_959661_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959613" connective="Conjunction">
+                <BARef>cdnt_959543</BARef>
+                <BARef>cdnt_959613_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959613_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959640" connective="Conjunction">
+                <BARef>cdnt_959561</BARef>
+                <BARef>cdnt_959640_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959561" connective="Conjunction">
+                <BARef>cdnt_959540</BARef>
+                <BARef>cdnt_959561_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959540" connective="Conjunction">
+                <BARef>cdnt_959540_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959540_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158131</BARef>
+                <BARef>dba_158139</BARef>
+            </DBA>
+            <DBA id="cdnt_959561_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959640_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959610" connective="Conjunction">
+                <BARef>cdnt_959600</BARef>
+                <BARef>cdnt_959610_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959600" connective="Conjunction">
+                <BARef>cdnt_959573</BARef>
+                <BARef>cdnt_959600_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959600_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158145</BARef>
+            </DBA>
+            <DBA id="cdnt_959610_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959596" connective="Conjunction">
+                <BARef>cdnt_959544</BARef>
+                <BARef>cdnt_959596_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959596_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959670" connective="Conjunction">
+                <BARef>cdnt_959617</BARef>
+                <BARef>cdnt_959670_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959617" connective="Conjunction">
+                <BARef>cdnt_959573</BARef>
+                <BARef>cdnt_959617_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959617_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959670_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959615" connective="Conjunction">
+                <BARef>cdnt_959603</BARef>
+                <BARef>cdnt_959615_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959603" connective="Conjunction">
+                <BARef>cdnt_959563</BARef>
+                <BARef>cdnt_959603_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959603_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959615_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959653" connective="Conjunction">
+                <BARef>cdnt_959585</BARef>
+                <BARef>cdnt_959653_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959585" connective="Conjunction">
+                <BARef>cdnt_959575</BARef>
+                <BARef>cdnt_959585_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959575" connective="Conjunction">
+                <BARef>cdnt_959575_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959575_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+                <BARef>dba_158139</BARef>
+            </DBA>
+            <DBA id="cdnt_959585_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959653_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959659" connective="Conjunction">
+                <BARef>cdnt_959600</BARef>
+                <BARef>cdnt_959659_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959659_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959680" connective="Conjunction">
+                <BARef>cdnt_959657</BARef>
+                <BARef>cdnt_959680_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959657" connective="Conjunction">
+                <BARef>cdnt_959594</BARef>
+                <BARef>cdnt_959657_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959594" connective="Conjunction">
+                <BARef>cdnt_959594_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959594_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959657_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959680_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959669" connective="Conjunction">
+                <BARef>cdnt_959618</BARef>
+                <BARef>cdnt_959669_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959618" connective="Conjunction">
+                <BARef>cdnt_959590</BARef>
+                <BARef>cdnt_959618_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959590" connective="Conjunction">
+                <BARef>cdnt_959590_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959590_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158141</BARef>
+                <BARef>dba_158148</BARef>
+            </DBA>
+            <DBA id="cdnt_959618_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158128</BARef>
+            </DBA>
+            <DBA id="cdnt_959669_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959681" connective="Conjunction">
+                <BARef>cdnt_959654</BARef>
+                <BARef>cdnt_959681_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959654" connective="Conjunction">
+                <BARef>cdnt_959590</BARef>
+                <BARef>cdnt_959654_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959654_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959681_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158143</BARef>
+            </DBA>
+            <DBA id="cdnt_959644" connective="Conjunction">
+                <BARef>cdnt_959576</BARef>
+                <BARef>cdnt_959644_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959644_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959625" connective="Conjunction">
+                <BARef>cdnt_959566</BARef>
+                <BARef>cdnt_959625_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959566" connective="Conjunction">
+                <BARef>cdnt_959547</BARef>
+                <BARef>cdnt_959566_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959566_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959625_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158133</BARef>
+            </DBA>
+            <DBA id="cdnt_959666" connective="Conjunction">
+                <BARef>cdnt_959608</BARef>
+                <BARef>cdnt_959666_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959608" connective="Conjunction">
+                <BARef>cdnt_959573</BARef>
+                <BARef>cdnt_959608_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959608_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158127</BARef>
+            </DBA>
+            <DBA id="cdnt_959666_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158135</BARef>
+            </DBA>
+            <DBA id="cdnt_959580" connective="Conjunction">
+                <BARef>cdnt_959562</BARef>
+                <BARef>cdnt_959580_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959562" connective="Conjunction">
+                <BARef>cdnt_959558</BARef>
+                <BARef>cdnt_959562_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959562_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158134</BARef>
+            </DBA>
+            <DBA id="cdnt_959580_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158137</BARef>
+            </DBA>
+            <DBA id="cdnt_959656" connective="Conjunction">
+                <BARef>cdnt_959608</BARef>
+                <BARef>cdnt_959656_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959656_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158144</BARef>
+            </DBA>
+            <DBA id="cdnt_959684" connective="Conjunction">
+                <BARef>cdnt_959684_attr</BARef>
+            </DBA>
+            <DBA id="cdnt_959684_attr" connective="Conjunction" literal="false">
+                <BARef>dba_158147</BARef>
+            </DBA>
+            <AssociationRule id="2221714" antecedent="cdnt_959581" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x13(-inf_to_-0.895) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0819936</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="51" b="0" c="294" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221715" antecedent="cdnt_959620" consequent="cdnt_959682">
+                <Text>x6(-inf_to_-0.875) &amp; x8(-inf_to_0.0) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0675241</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="42" b="0" c="303" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221716" antecedent="cdnt_959675" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x14(-inf_to_-0.99016) &amp; x3(-0.6994645_to_inf) &amp;
+                    x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0675241</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="42" b="0" c="303" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221717" antecedent="cdnt_959621" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp; x5(0.0_to_0.4615385) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0659164</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="41" b="0" c="236" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221718" antecedent="cdnt_959672" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp;
+                    x13(-0.895_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0659164</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="41" b="0" c="236" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221719" antecedent="cdnt_959571" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp; x13(-inf_to_-0.895) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.062701</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="39" b="0" c="238" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221720" antecedent="cdnt_959652" consequent="cdnt_959683">
+                <Text>x6(0.625_to_inf) &amp; x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0610932</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="38" b="0" c="239" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221721" antecedent="cdnt_959673" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp;
+                    x13(-0.895_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0594855</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="37" b="0" c="240" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221722" antecedent="cdnt_959551" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x3(-0.6994645_to_inf) &amp; x13(-inf_to_-0.895) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0562701</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="35" b="0" c="310" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221723" antecedent="cdnt_959674" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp;
+                    x3(-inf_to_-0.6994645) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0514469</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="32" b="0" c="245" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221724" antecedent="cdnt_959582" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x9(0.0_to_inf) &amp; x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0498392</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="31" b="0" c="314" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221725" antecedent="cdnt_959634" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x10(-0.9253735_to_inf) &amp; x3(-0.6994645_to_inf)
+                    &amp; x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0450161</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="28" b="0" c="249" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221726" antecedent="cdnt_959555" consequent="cdnt_959683">
+                <Text>x6(0.625_to_inf) &amp; x13(-inf_to_-0.895) &amp; x5(0.4615385_to_inf) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0434084</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="27" b="0" c="250" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221727" antecedent="cdnt_959606" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp;
+                    x5(-inf_to_0.0) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0418006</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="26" b="0" c="251" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221728" antecedent="cdnt_959595" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x6(0.625_to_inf) &amp; x8(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0385852</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="24" b="0" c="321" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221729" antecedent="cdnt_959663" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x10(-inf_to_-0.9253735) &amp; x8(0.0_to_inf) &amp;
+                    x14(-0.99016_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0385852</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="24" b="0" c="253" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221730" antecedent="cdnt_959651" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x8(0.0_to_inf) &amp; x3(-inf_to_-0.6994645) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0369775</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="23" b="0" c="254" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221731" antecedent="cdnt_959678" consequent="cdnt_959682">
+                <Text>x6(-inf_to_-0.875) &amp; x9(-inf_to_0.0) &amp; x3(-inf_to_-0.6994645) &amp;
+                    x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0337621</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="21" b="0" c="324" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221732" antecedent="cdnt_959627" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x6(-0.875_to_0.625) &amp; x3(-0.6994645_to_inf)
+                    &amp; x13(-0.895_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0337621</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="21" b="0" c="256" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221733" antecedent="cdnt_959602" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x9(0.0_to_inf) &amp; x13(-inf_to_-0.895) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0305466</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="19" b="0" c="326" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221734" antecedent="cdnt_959647" consequent="cdnt_959682">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(-inf_to_0.0) &amp; x13(-inf_to_-0.895) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0305466</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="19" b="0" c="326" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221735" antecedent="cdnt_959655" consequent="cdnt_959683">
+                <Text>x7(-inf_to_-0.9108775) &amp; x10(-0.9253735_to_inf) &amp; x8(0.0_to_inf) &amp;
+                    x13(-inf_to_-0.895) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0305466</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="19" b="0" c="258" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221736" antecedent="cdnt_959556" consequent="cdnt_959682">
+                <Text>x6(0.625_to_inf) &amp; x8(-inf_to_0.0) &amp; x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0273312</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="17" b="0" c="328" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221737" antecedent="cdnt_959626" consequent="cdnt_959683">
+                <Text>x10(-inf_to_-0.9253735) &amp; x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp;
+                    x13(-inf_to_-0.895) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0273312</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="17" b="0" c="260" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221738" antecedent="cdnt_959633" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x9(0.0_to_inf) &amp; x3(-0.6994645_to_inf) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0241158</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="15" b="0" c="330" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221739" antecedent="cdnt_959642" consequent="cdnt_959682">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(-inf_to_0.0) &amp; x9(0.0_to_inf) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.022508</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="14" b="0" c="331" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221740" antecedent="cdnt_959660" consequent="cdnt_959683">
+                <Text>x6(0.625_to_inf) &amp; x8(0.0_to_inf) &amp; x13(-inf_to_-0.895) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.022508</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="14" b="0" c="263" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221741" antecedent="cdnt_959667" consequent="cdnt_959683">
+                <Text>x10(-inf_to_-0.9253735) &amp; x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.022508</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="14" b="0" c="263" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221742" antecedent="cdnt_959636" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x6(0.625_to_inf) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0209003</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="13" b="0" c="332" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221743" antecedent="cdnt_959679" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x14(-inf_to_-0.99016) &amp; x13(-inf_to_-0.895)
+                    &amp; x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0209003</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="13" b="0" c="264" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221744" antecedent="cdnt_959668" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x9(-inf_to_0.0) &amp; x14(-0.99016_to_inf) &amp;
+                    x3(-inf_to_-0.6994645) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0209003</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="13" b="0" c="332" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221745" antecedent="cdnt_959650" consequent="cdnt_959682">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(-inf_to_0.0) &amp; x3(-0.6994645_to_inf) &amp;
+                    x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0209003</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="13" b="0" c="332" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221746" antecedent="cdnt_959560" consequent="cdnt_959682">
+                <Text>x10(-0.9253735_to_inf) &amp; x8(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0192926</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="12" b="0" c="333" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221747" antecedent="cdnt_959639" consequent="cdnt_959683">
+                <Text>x9(0.0_to_inf) &amp; x3(-inf_to_-0.6994645) &amp; x13(-inf_to_-0.895) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0192926</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="12" b="0" c="265" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221748" antecedent="cdnt_959648" consequent="cdnt_959683">
+                <Text>x6(0.625_to_inf) &amp; x8(0.0_to_inf) &amp; x9(-inf_to_0.0) &amp;
+                    x13(-inf_to_-0.895) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0176849</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="11" b="0" c="266" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221749" antecedent="cdnt_959676" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x9(-inf_to_0.0) &amp; x14(-0.99016_to_inf) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0176849</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="11" b="0" c="266" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221750" antecedent="cdnt_959623" consequent="cdnt_959683">
+                <Text>x7(-inf_to_-0.9108775) &amp; x8(0.0_to_inf) &amp; x9(-inf_to_0.0) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0176849</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="11" b="0" c="266" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221751" antecedent="cdnt_959574" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x10(-0.9253735_to_inf) &amp; x13(-0.895_to_inf)
+                    &amp; x5(-inf_to_0.0) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0176849</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="11" b="0" c="266" d="345"/>
+            </AssociationRule>
+            <AssociationRule id="2221752" antecedent="cdnt_959646" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x14(-0.99016_to_inf) &amp; x5(0.0_to_0.4615385) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0144695</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="9" b="0" c="336" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221753" antecedent="cdnt_959664" consequent="cdnt_959682">
+                <Text>x10(-inf_to_-0.9253735) &amp; x6(-inf_to_-0.875) &amp; x9(0.0_to_inf) &amp;
+                    x13(-inf_to_-0.895) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.011254</IMValue>
+                <IMValue name="CONF" type="%All">1</IMValue>
+                <FourFtTable a="7" b="0" c="338" d="277"/>
+            </AssociationRule>
+            <AssociationRule id="2221754" antecedent="cdnt_959649" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x8(-inf_to_0.0) &amp; x14(-inf_to_-0.99016) &amp;
+                    x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.173633</IMValue>
+                <IMValue name="CONF" type="%All">0.990826</IMValue>
+                <FourFtTable a="108" b="1" c="237" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221755" antecedent="cdnt_959604" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x14(-0.99016_to_inf) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.12701</IMValue>
+                <IMValue name="CONF" type="%All">0.9875</IMValue>
+                <FourFtTable a="79" b="1" c="198" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221756" antecedent="cdnt_959584" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x8(-inf_to_0.0) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.196141</IMValue>
+                <IMValue name="CONF" type="%All">0.983871</IMValue>
+                <FourFtTable a="122" b="2" c="223" d="275"/>
+            </AssociationRule>
+            <AssociationRule id="2221757" antecedent="cdnt_959614" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x9(0.0_to_inf) &amp; x14(-inf_to_-0.99016) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.085209</IMValue>
+                <IMValue name="CONF" type="%All">0.981481</IMValue>
+                <FourFtTable a="53" b="1" c="292" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221758" antecedent="cdnt_959635" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x6(-0.875_to_0.625) &amp; x8(0.0_to_inf) &amp;
+                    x3(-0.6994645_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0836013</IMValue>
+                <IMValue name="CONF" type="%All">0.981132</IMValue>
+                <FourFtTable a="52" b="1" c="225" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221759" antecedent="cdnt_959677" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x8(-inf_to_0.0) &amp; x14(-inf_to_-0.99016) &amp;
+                    x3(-0.6994645_to_inf) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0803858</IMValue>
+                <IMValue name="CONF" type="%All">0.980392</IMValue>
+                <FourFtTable a="50" b="1" c="295" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221760" antecedent="cdnt_959624" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp; x14(-0.99016_to_inf) &amp;
+                    x13(-0.895_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0787781</IMValue>
+                <IMValue name="CONF" type="%All">0.98</IMValue>
+                <FourFtTable a="49" b="1" c="228" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221761" antecedent="cdnt_959643" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x14(-inf_to_-0.99016) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.223473</IMValue>
+                <IMValue name="CONF" type="%All">0.978873</IMValue>
+                <FourFtTable a="139" b="3" c="206" d="274"/>
+            </AssociationRule>
+            <AssociationRule id="2221762" antecedent="cdnt_959550" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x13(-inf_to_-0.895) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.120579</IMValue>
+                <IMValue name="CONF" type="%All">0.974026</IMValue>
+                <FourFtTable a="75" b="2" c="270" d="275"/>
+            </AssociationRule>
+            <AssociationRule id="2221763" antecedent="cdnt_959568" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x8(0.0_to_inf) &amp; x13(-inf_to_-0.895) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.117363</IMValue>
+                <IMValue name="CONF" type="%All">0.973333</IMValue>
+                <FourFtTable a="73" b="2" c="204" d="343"/>
+            </AssociationRule>
+            <AssociationRule id="2221764" antecedent="cdnt_959638" consequent="cdnt_959682">
+                <Text>x6(-inf_to_-0.875) &amp; x3(-inf_to_-0.6994645) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0530547</IMValue>
+                <IMValue name="CONF" type="%All">0.970588</IMValue>
+                <FourFtTable a="33" b="1" c="312" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221765" antecedent="cdnt_959665" consequent="cdnt_959682">
+                <Text>x6(-inf_to_-0.875) &amp; x9(-inf_to_0.0) &amp; x5(-inf_to_0.0) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0482315</IMValue>
+                <IMValue name="CONF" type="%All">0.967742</IMValue>
+                <FourFtTable a="30" b="1" c="315" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221766" antecedent="cdnt_959671" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x6(-0.875_to_0.625) &amp; x8(0.0_to_inf) &amp;
+                    x5(-inf_to_0.0) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0482315</IMValue>
+                <IMValue name="CONF" type="%All">0.967742</IMValue>
+                <FourFtTable a="30" b="1" c="247" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221767" antecedent="cdnt_959619" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x8(0.0_to_inf) &amp; x13(-0.895_to_inf) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0466238</IMValue>
+                <IMValue name="CONF" type="%All">0.966667</IMValue>
+                <FourFtTable a="29" b="1" c="248" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221768" antecedent="cdnt_959637" consequent="cdnt_959683">
+                <Text>x6(-0.875_to_0.625) &amp; x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp;
+                    x13(-inf_to_-0.895) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0900322</IMValue>
+                <IMValue name="CONF" type="%All">0.965517</IMValue>
+                <FourFtTable a="56" b="2" c="221" d="343"/>
+            </AssociationRule>
+            <AssociationRule id="2221769" antecedent="cdnt_959661" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x10(-0.9253735_to_inf) &amp; x6(-0.875_to_0.625)
+                    &amp; x8(0.0_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.106109</IMValue>
+                <IMValue name="CONF" type="%All">0.956522</IMValue>
+                <FourFtTable a="66" b="3" c="211" d="342"/>
+            </AssociationRule>
+            <AssociationRule id="2221770" antecedent="cdnt_959613" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) &amp; x3(-0.6994645_to_inf) &amp; x5(0.0_to_0.4615385) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0353698</IMValue>
+                <IMValue name="CONF" type="%All">0.956522</IMValue>
+                <FourFtTable a="22" b="1" c="323" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221771" antecedent="cdnt_959640" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x6(0.625_to_inf) &amp; x3(-0.6994645_to_inf) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0353698</IMValue>
+                <IMValue name="CONF" type="%All">0.956522</IMValue>
+                <FourFtTable a="22" b="1" c="255" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221772" antecedent="cdnt_959610" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp;
+                    x3(-0.6994645_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.136656</IMValue>
+                <IMValue name="CONF" type="%All">0.955056</IMValue>
+                <FourFtTable a="85" b="4" c="192" d="341"/>
+            </AssociationRule>
+            <AssociationRule id="2221773" antecedent="cdnt_959596" consequent="cdnt_959682">
+                <Text>x6(0.625_to_inf) &amp; x8(-inf_to_0.0) &amp; x3(-inf_to_-0.6994645) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0337621</IMValue>
+                <IMValue name="CONF" type="%All">0.954545</IMValue>
+                <FourFtTable a="21" b="1" c="324" d="276"/>
+            </AssociationRule>
+            <AssociationRule id="2221774" antecedent="cdnt_959670" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x13(-inf_to_-0.895) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0659164</IMValue>
+                <IMValue name="CONF" type="%All">0.953488</IMValue>
+                <FourFtTable a="41" b="2" c="236" d="343"/>
+            </AssociationRule>
+            <AssociationRule id="2221775" antecedent="cdnt_959615" consequent="cdnt_959683">
+                <Text>x7(-inf_to_-0.9108775) &amp; x8(0.0_to_inf) &amp; x3(-inf_to_-0.6994645) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0321543</IMValue>
+                <IMValue name="CONF" type="%All">0.952381</IMValue>
+                <FourFtTable a="20" b="1" c="257" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221776" antecedent="cdnt_959653" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x3(-0.6994645_to_inf) &amp; x13(-inf_to_-0.895)
+                    &amp; x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0305466</IMValue>
+                <IMValue name="CONF" type="%All">0.95</IMValue>
+                <FourFtTable a="19" b="1" c="258" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221777" antecedent="cdnt_959659" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0868167</IMValue>
+                <IMValue name="CONF" type="%All">0.947368</IMValue>
+                <FourFtTable a="54" b="3" c="223" d="342"/>
+            </AssociationRule>
+            <AssociationRule id="2221778" antecedent="cdnt_959680" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x3(-0.6994645_to_inf) &amp; x13(-inf_to_-0.895) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0578778</IMValue>
+                <IMValue name="CONF" type="%All">0.947368</IMValue>
+                <FourFtTable a="36" b="2" c="241" d="343"/>
+            </AssociationRule>
+            <AssociationRule id="2221779" antecedent="cdnt_959669" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x9(-inf_to_0.0) &amp; x13(-0.895_to_inf) &amp;
+                    x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.139871</IMValue>
+                <IMValue name="CONF" type="%All">0.945652</IMValue>
+                <FourFtTable a="87" b="5" c="258" d="272"/>
+            </AssociationRule>
+            <AssociationRule id="2221780" antecedent="cdnt_959641" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x8(-inf_to_0.0) &amp; x14(-inf_to_-0.99016) →
+                    y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.300643</IMValue>
+                <IMValue name="CONF" type="%All">0.944444</IMValue>
+                <FourFtTable a="187" b="11" c="158" d="266"/>
+            </AssociationRule>
+            <AssociationRule id="2221781" antecedent="cdnt_959681" consequent="cdnt_959682">
+                <Text>x7(-inf_to_-0.9108775) &amp; x9(-inf_to_0.0) &amp; x3(-inf_to_-0.6994645)
+                    &amp; x5(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.135048</IMValue>
+                <IMValue name="CONF" type="%All">0.94382</IMValue>
+                <FourFtTable a="84" b="5" c="261" d="272"/>
+            </AssociationRule>
+            <AssociationRule id="2221782" antecedent="cdnt_959644" consequent="cdnt_959683">
+                <Text>x6(-0.875_to_0.625) &amp; x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp;
+                    x3(-0.6994645_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.106109</IMValue>
+                <IMValue name="CONF" type="%All">0.942857</IMValue>
+                <FourFtTable a="66" b="4" c="211" d="341"/>
+            </AssociationRule>
+            <AssociationRule id="2221783" antecedent="cdnt_959625" consequent="cdnt_959683">
+                <Text>x8(0.0_to_inf) &amp; x9(0.0_to_inf) &amp; x3(-inf_to_-0.6994645) &amp;
+                    x5(0.4615385_to_inf) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0514469</IMValue>
+                <IMValue name="CONF" type="%All">0.941176</IMValue>
+                <FourFtTable a="32" b="2" c="245" d="343"/>
+            </AssociationRule>
+            <AssociationRule id="2221784" antecedent="cdnt_959616" consequent="cdnt_959683">
+                <Text>x10(-0.9253735_to_inf) &amp; x6(-0.875_to_0.625) &amp; x8(0.0_to_inf) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.149518</IMValue>
+                <IMValue name="CONF" type="%All">0.939394</IMValue>
+                <FourFtTable a="93" b="6" c="184" d="339"/>
+            </AssociationRule>
+            <AssociationRule id="2221785" antecedent="cdnt_959666" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x3(-0.6994645_to_inf) &amp;
+                    x5(0.0_to_0.4615385) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.0723473</IMValue>
+                <IMValue name="CONF" type="%All">0.9375</IMValue>
+                <FourFtTable a="45" b="3" c="232" d="342"/>
+            </AssociationRule>
+            <AssociationRule id="2221786" antecedent="cdnt_959580" consequent="cdnt_959683">
+                <Text>x7(-inf_to_-0.9108775) &amp; x6(0.625_to_inf) &amp; x8(0.0_to_inf) &amp;
+                    x3(-inf_to_-0.6994645) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.022508</IMValue>
+                <IMValue name="CONF" type="%All">0.933333</IMValue>
+                <FourFtTable a="14" b="1" c="263" d="344"/>
+            </AssociationRule>
+            <AssociationRule id="2221787" antecedent="cdnt_959656" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x3(-0.6994645_to_inf) &amp;
+                    x13(-inf_to_-0.895) → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.110932</IMValue>
+                <IMValue name="CONF" type="%All">0.932432</IMValue>
+                <FourFtTable a="69" b="5" c="208" d="340"/>
+            </AssociationRule>
+            <AssociationRule id="2221788" antecedent="cdnt_959600" consequent="cdnt_959683">
+                <Text>x7(-0.9108775_to_inf) &amp; x8(0.0_to_inf) &amp; x9(0.0_to_inf) →
+                    y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.212219</IMValue>
+                <IMValue name="CONF" type="%All">0.929577</IMValue>
+                <FourFtTable a="132" b="10" c="145" d="335"/>
+            </AssociationRule>
+            <AssociationRule id="2221789" antecedent="cdnt_959684" consequent="cdnt_959682">
+                <Text>x8(-inf_to_0.0) → y(-1.0)</Text>
+                <IMValue name="BASE" type="%All">0.440514</IMValue>
+                <IMValue name="CONF" type="%All">0.928814</IMValue>
+                <FourFtTable a="274" b="21" c="71" d="256"/>
+            </AssociationRule>
+            <AssociationRule id="2221790" consequent="cdnt_959683">
+                <Text>* → y(1.0)</Text>
+                <IMValue name="BASE" type="%All">0.445338</IMValue>
+                <IMValue name="CONF" type="%All">0.445338</IMValue>
+                <FourFtTable a="277" b="345" c="0" d="0"/>
+            </AssociationRule>
+        </AssociationRules>
+    </guha:AssociationModel>
+</PMML>
