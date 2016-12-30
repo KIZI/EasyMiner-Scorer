@@ -8,11 +8,19 @@ EasyMiner scorer for classifications and evaluations
 
 ```bash
 # build a docker image
-docker build -t easyminer-scorer .
+docker build -t kizi/easyminer-scorer .
 # or pull from docker hub
 docker pull kizi/easyminer-scorer
 # run 
 docker run -d -p 8080:8080 --name easyminer-scorer kizi/easyminer-scorer
+```
+
+Other Docker commands:
+```bash
+# interactive mode
+docker run -it -p 8080:8080 kizi/easyminer-scorer
+# interactive mode + bash
+docker run -it -p 8080:8080 --entrypoint=/bin/bash kizi/easyminer-scorer -i
 ```
 
 ## API description
